@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 297801525116121032}
   - component: {fileID: 5564444403503052499}
-  - component: {fileID: 5564444403503052333}
   - component: {fileID: 5564444403503052332}
   - component: {fileID: 5564444403503052335}
+  - component: {fileID: 5564444403503052333}
+  - component: {fileID: 5592164983548216168}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5564444403503052499
 SpriteRenderer:
@@ -87,18 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5564444403503052333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467402085704405494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e17efad3a93c2c145b1ad5bdf1070bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &5564444403503052332
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -171,3 +160,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5564444403503052333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467402085704405494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e17efad3a93c2c145b1ad5bdf1070bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5592164983548216168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467402085704405494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf2473e6e9e1de4386b2ba71f7c28bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathEffect: {fileID: 0}
